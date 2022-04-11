@@ -1,9 +1,9 @@
-combmodel:
+combmodel:  A package to simulate Fractional Brownian walks on a comb-like structure.
 ==========================================================================================
 
- A package to simulate Fractional Brownian walks on a comb-like structure
+This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).
 
- Installation
+Installation
 -------------
 
 The ``combmodel`` package is available on pypi and can be installed using pip
@@ -17,7 +17,6 @@ Dependencies
 * ``numpy`` 
 * ``stochastic`` 
 * ``tdqm`` 
-
 
 Processes
 ---------
