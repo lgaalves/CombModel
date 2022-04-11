@@ -18,7 +18,7 @@ The ``combmodel`` package is available on pypi and can be installed using pip
 
 .. code-block:: shell
 
-    pip install combmodel
+    pip install comb-model
 
 Dependencies
 ~~~~~~~~~~~~
