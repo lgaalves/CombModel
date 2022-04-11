@@ -2,7 +2,7 @@ import numpy as np
 from tqdm import tqdm
 
 import os
-import sys
+import sys  
 from stochastic.processes.noise import FractionalGaussianNoise
 
 def generate_noise(hurstx,hursty,tmax):
@@ -35,10 +35,9 @@ def generate_noise(hurstx,hursty,tmax):
     (array([-0.53864566,  1.73135243, -0.69313135, -0.48115404, -0.01842138]),
      array([-1.57217193,  0.53307083, -0.42125488,  0.74312906,  0.71722691]))
     """
-    fgn = FractionalGaussianNoise(hurst=hurstx, t=1)
+    fgn = FractionalGaussianNoise(hurst=hurstx, t=tmax)
     noisex = np.array(fgn.sample(tmax,algorithm='hosking'))
-    noisex
-    fgn = FractionalGaussianNoise(hurst=hursty, t=1)
+    fgn = FractionalGaussianNoise(hurst=hursty, t=tmax)
     noisey = np.array(fgn.sample(tmax,algorithm='hosking'))
     return noisex,noisey
 
