@@ -3,6 +3,8 @@ combmodel:  A package to simulate Fractional Brownian walks on a comb-like struc
 
 This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).
 
+<image src='featured.png' />
+
 Installation
 -------------
 
