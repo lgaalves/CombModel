@@ -8,7 +8,7 @@
    :target: https://pypi.org/project/comb-model/
    :scale: 100%
 .. |docs| image:: https://readthedocs.org/projects/comb-model/badge/?version=latest
-   :target: https://ordpy.readthedocs.io/?badge=latest
+   :target: https://comb-model.readthedocs.io/?badge=latest
    :alt: Documentation Status
    :scale: 100%
 
