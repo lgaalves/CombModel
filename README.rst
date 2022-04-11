@@ -34,4 +34,4 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
 References
 ==========
 
-.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. New Journal of Physics 16, 093050.
+.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. DOI: http://dx.doi.org/10.1088/1367-2630/16/9/093050
