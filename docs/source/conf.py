@@ -14,12 +14,12 @@ import os
 import sys
 import inspect
 
-sys.path.insert(0, os.path.abspath('../combmodel/'))
+sys.path.insert(0, os.path.abspath('../comb-model/'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'combmodel'
+project = 'comb-model'
 copyright = '2022, Luiz G. A. Alves'
 author = 'Luiz G. A. Alves'
 

@@ -4,4 +4,4 @@ API
 .. autosummary::
    :toctree: generated
 
-   combmodel
+   comb-model
