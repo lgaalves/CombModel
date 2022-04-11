@@ -1,4 +1,23 @@
-combmodel:  A package to simulate Fractional Brownian walks on a comb-like structure.
+.. |version| image:: https://img.shields.io/pypi/v/comb-model?style=plastic   :alt: PyPI 
+   :target: https://pypi.org/project/comb-model/
+   :scale: 100%
+.. |license| image:: https://img.shields.io/github/license/lgaalves/combmodel?style=plastic   :alt: GitHub 
+   :target:  https://github.com/lgaalves/CombMolde/blob/master/license.rst
+   :scale: 100%
+.. |downloads| image:: https://img.shields.io/pypi/dm/comb-model?style=plastic    :alt: PyPI - Downloads
+   :target: https://pypi.org/project/comb-model/
+   :scale: 100%
+.. |docs| image:: https://readthedocs.org/projects/comb-model/badge/?version=latest
+   :target: https://ordpy.readthedocs.io/?badge=latest
+   :alt: Documentation Status
+   :scale: 100%
+
+
+
+|version| |license| |downloads| |docs| 
+
+
+comb-model:  A package to simulate Fractional Brownian walks on a comb-like structure.
 ==========================================================================================
 
 This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).
