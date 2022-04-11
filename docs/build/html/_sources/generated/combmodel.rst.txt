@@ -1,7 +1,7 @@
-﻿comb-model
+﻿combmodel
 =========
 
-.. automodule:: comb-model
+.. automodule:: combmodel
 
    
    

@@ -80,7 +80,7 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
    import matplotlib.pyplot as plt
    from combmodel import comb_model
 
-   x, y = comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=False)
+   x, y = ccomb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=False)
 
    f, ax = plt.subplots(nrows=1, ncols=1, figsize=(9.1,7))
    ax.plot(x,y,color='#D62728',markersize=0,linewidth=2)
@@ -96,6 +96,7 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
 
 List of functions
 -------------
+
 
 .. autofunction:: combmodel.generate_noise
 .. autofunction:: combmodel.langevin_fbn
