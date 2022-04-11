@@ -11,9 +11,9 @@ def generate_noise(hurstx,hursty,tmax):
 
     Parameters
     ----------
-    hurstx:
+    hurstx: float
         Hurst exponent in the x-direction. Vales must be in the range (0,1). 
-    hursty:
+    hursty: float
         Hurst exponent in the y-direction. Vales must be in the range (0,1). 
     tmax: int
         Maximum number of time-step simulated.
@@ -55,9 +55,9 @@ def langevin_fbn(x0,y0,betax,betay,hurstx,hursty,tmax,disable_tqdm=False):
         Constant related to diffusion coefficient in the x-direction. 
     betay: float
         Constant related to diffusion coefficient in the y-direction.
-    hurstx:
+    hurstx: float
         Hurst exponent in the x-direction. Vales must be in the range (0,1). 
-    hursty:
+    hursty: float
         Hurst exponent in the y-direction. Vales must be in the range (0,1). 
     tmax: int
         Maximum number of time-step simulated.
@@ -111,9 +111,9 @@ def comb_model(x0,y0,betax,betay,hurstx,hursty,tmax,eps,disable_tqdm=False):
         Constant related to diffusion coefficient in the x-direction. 
     betay: float
         Constant related to diffusion coefficient in the y-direction.
-    hurstx:
+    hurstx: float
         Hurst exponent in the x-direction. Vales must be in the range (0,1). 
-    hursty:
+    hursty: float
         Hurst exponent in the y-direction. Vales must be in the range (0,1). 
     tmax: int
         Maximum number of time-step simulated.

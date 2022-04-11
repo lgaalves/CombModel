@@ -33,7 +33,7 @@ This package simulate trajectories of the comb model via Langevin equations driv
 Installation
 -------------
 
-The ``combmodel`` package is available on pypi and can be installed using pip
+The ``comb-model`` package is available on pypi and can be installed using pip
 
 .. code-block:: shell
 
@@ -58,7 +58,8 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
     import matplotlib.pyplot as plt
     from combmodel import langevin_fbn
     
-    x,y=langevin_fbn(0,0,0.1,0.1,0.5,0.5,10**3,disable_tqdm=True)
+    x,y=langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=1000,disable_tqdm=True)
+
     
     f, ax = plt.subplots(nrows=1, ncols=1, figsize=(9.1,7))
     ax.plot(x,y,color='#D62728',markersize=0,linewidth=2)
@@ -79,7 +80,7 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
 	import matplotlib.pyplot as plt
 	from combmodel import comb_model
 
-	x, y = comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=False)
+	x, y = comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=True)
 
 	f, ax = plt.subplots(nrows=1, ncols=1, figsize=(9.1,7))
 	ax.plot(x,y,color='#D62728',markersize=0,linewidth=2)
