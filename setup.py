@@ -4,8 +4,8 @@ with open("README.rst", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name='comb_model',
-    version='0.1.0',
+    name='comb-model',
+    version='1.0.0',
     license='MIT',
     author="Luiz G. A. Alves",
     author_email='lgaalves@northwestern.edu',
@@ -20,7 +20,7 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-          'stochastic','numpy','tqdm','scipy'
+          'stochastic','numpy','tqdm'
       ],
 
 )

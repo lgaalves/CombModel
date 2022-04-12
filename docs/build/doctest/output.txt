@@ -1,80 +1,5 @@
-Results of doctest builder run on 2022-04-12 13:55:56
+Results of doctest builder run on 2022-04-12 14:42:08
 =====================================================
-
-Document: index
----------------
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    comb_model(x0=0,y0=0,betax=0.1,betay=0.1,hurstx=0.5,hursty=0.5,tmax=10,eps=0.1,disable_tqdm=False)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        comb_model(x0=0,y0=0,betax=0.1,betay=0.1,hurstx=0.5,hursty=0.5,tmax=10,eps=0.1,disable_tqdm=False)
-    NameError: name 'comb_model' is not defined
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.99,tmax=10,eps=1,disable_tqdm=True)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.99,tmax=10,eps=1,disable_tqdm=True)
-    NameError: name 'comb_model' is not defined
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    generate_noise(hurstx=0.5,hursty=0.5,tmax=5)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        generate_noise(hurstx=0.5,hursty=0.5,tmax=5)
-    NameError: name 'generate_noise' is not defined
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    generate_noise(hurstx=0.05,hursty=0.99,tmax=5)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        generate_noise(hurstx=0.05,hursty=0.99,tmax=5)
-    NameError: name 'generate_noise' is not defined
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=10,disable_tqdm=False)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=10,disable_tqdm=False)
-    NameError: name 'langevin_fbn' is not defined
-**********************************************************************
-File "../../combmodel/combmodel.py", line ?, in default
-Failed example:
-    langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.05,hursty=0.95,tmax=10,disable_tqdm=True)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.05,hursty=0.95,tmax=10,disable_tqdm=True)
-    NameError: name 'langevin_fbn' is not defined
-**********************************************************************
-1 items had failures:
-   6 of   6 in default
-6 tests in 1 items.
-0 passed and 6 failed.
-***Test Failed*** 6 failures.
 
 Document: usage
 ---------------
@@ -153,7 +78,7 @@ Exception raised:
 
 Doctest summary
 ===============
-   12 tests
-   12 failures in tests
+    6 tests
+    6 failures in tests
     0 failures in setup code
     0 failures in cleanup code

@@ -12,15 +12,10 @@ Contents
 --------
 .. toctree::
    usage
-   api
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-
-.. automodule:: combmodel
-   :members:
 
 Indices
 ==================

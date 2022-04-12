@@ -15,7 +15,8 @@ import sys
 import inspect
 
 path = os.path.abspath('../../combmodel/')
-print(path)
+# print("Here is the problem")
+# print(path)
 sys.path.insert(0,path )
 
 # -- Project information -----------------------------------------------------
