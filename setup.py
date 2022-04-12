@@ -12,7 +12,8 @@ setup(
     description="A package to simulate Fractional Brownian walks on a comb-like structure.",
     long_description=long_description,
     long_description_content_type="text/x-rst; charset=UTF-8",
-    packages=find_packages(),
+    packages=find_packages('combmodel'),
+    package_dir={'': 'combmodel'},
     url='https://github.com/lgaalves/CombModel',
     classifiers=[
         "Programming Language :: Python :: 3",

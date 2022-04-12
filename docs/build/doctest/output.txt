@@ -1,4 +1,4 @@
-Results of doctest builder run on 2022-04-12 14:42:08
+Results of doctest builder run on 2022-04-12 15:06:29
 =====================================================
 
 Document: usage
@@ -7,78 +7,85 @@ Document: usage
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     generate_noise(hurstx=0.5,hursty=0.5,tmax=5)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        generate_noise(hurstx=0.5,hursty=0.5,tmax=5)
-    NameError: name 'generate_noise' is not defined
+Expected:
+    (array([ 0.25768888,  0.26578568, -0.5264168 , -0.22897338,  1.5653223 ]),
+     array([ 0.07702825, -0.76531544,  1.30514932, -1.88840645,  0.12964754]))
+Got:
+    (array([ 1.19664163, -2.15363704, -1.62504268, -1.35090205,  0.00629898]), array([ 0.07044182, -1.37110436, -0.65492462, -0.19343465, -0.01242887]))
 **********************************************************************
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     generate_noise(hurstx=0.05,hursty=0.99,tmax=5)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        generate_noise(hurstx=0.05,hursty=0.99,tmax=5)
-    NameError: name 'generate_noise' is not defined
+Expected:
+    (array([ 0.86985584, -0.06461844, -1.14352549, -0.58317815, -1.46406803]),
+    array([-1.70277230e-01, -3.01093568e-01, -3.67460604e-01,  2.79234304e-04,-1.12502245e-01]))
+Got:
+    (array([ 0.50594161, -0.9309771 ,  0.01859288,  0.93953328, -0.29921171]), array([1.35324592, 1.48234693, 1.80069646, 1.5694776 , 1.68556485]))
 **********************************************************************
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=10,disable_tqdm=False)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=10,disable_tqdm=False)
-    NameError: name 'langevin_fbn' is not defined
+Expected:
+    100%|███████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 219469.40it/s]
+    (array([ 0.        ,  0.31802743, -0.83832619, -0.27312321,  0.04191725,
+             0.23666782, -1.75041569, -0.14763177, -0.50695669,  0.152747  ]),
+     array([ 0.        , -1.33455269, -0.76376196,  0.10190015,  0.54170037,
+             1.03303179, -0.310934  ,  0.92504652,  1.77317527,  0.68204445]))
+Got:
+    (array([ 0.        , -1.19727027,  1.26106995,  0.40657516,  1.25773432,
+            0.30044177,  1.61053878,  2.20486039,  2.17169262,  2.70394209]), array([ 0.        , -1.01575022, -1.41452873, -1.47506543, -0.36716894,
+           -0.3930052 , -0.13090263, -1.00840653,  0.02679683,  0.92323332]))
 **********************************************************************
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.05,hursty=0.95,tmax=10,disable_tqdm=True)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.05,hursty=0.95,tmax=10,disable_tqdm=True)
-    NameError: name 'langevin_fbn' is not defined
+Expected:
+    (array([ 0.        , -1.06714954, -2.42275827, -2.15268094, -1.94348332,
+        -2.83243755, -3.12425033, -3.72050659, -2.4537888 , -1.05256446]),
+     array([ 0.        , -1.65366648, -3.24551102, -2.65525154, -3.31656122,
+            -2.50457923, -2.05895687, -0.73025872, -0.64509908, -0.09122725])))
+Got:
+    (array([ 0.        ,  0.43892347, -1.62068372, -0.72772892, -0.29701866,
+           -1.7714809 , -1.06491734, -0.50639114, -1.27399488, -0.17581608]), array([  0.        ,  -0.19125855,  -0.88119756,  -1.74047406,
+            -2.87956247,  -4.3403542 ,  -6.68178093,  -8.84456039,
+           -11.37571904, -13.77808679]))
 **********************************************************************
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     comb_model(x0=0,y0=0,betax=0.1,betay=0.1,hurstx=0.5,hursty=0.5,tmax=10,eps=0.1,disable_tqdm=False)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        comb_model(x0=0,y0=0,betax=0.1,betay=0.1,hurstx=0.5,hursty=0.5,tmax=10,eps=0.1,disable_tqdm=False)
-    NameError: name 'comb_model' is not defined
+Expected:
+    100%|███████████████████████████████████████████████████████████████| 9/9 [00:00<00:00, 142987.64it/s]
+    (array([ 0.        ,  0.06893574, -0.18618081, -0.16402136, -0.08273242,
+            -0.10966074, -0.10966074, -0.08535346, -0.05060382,  0.03196749]),
+     array([ 0.        , -0.07952973, -0.0537798 , -0.02380105,  0.0382455 ,
+             0.10637735, -0.05516008,  0.02736965,  0.04563519,  0.16306934]))
+Got:
+    (array([ 0.        ,  0.00241641,  0.0249995 ,  0.0249995 ,  0.22900615,
+            0.16106311, -0.02473458, -0.15974373, -0.15974373, -0.15974373]), array([ 0.        , -0.06259381,  0.15577439, -0.02920904,  0.04199802,
+            0.0184165 ,  0.01242505, -0.30536397, -0.3426123 , -0.48352572]))
 **********************************************************************
 File "../../combmodel/combmodel.py", line ?, in default
 Failed example:
     comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.99,tmax=10,eps=1,disable_tqdm=True)
-Exception raised:
-    Traceback (most recent call last):
-      File "/Users/lgaalves/opt/anaconda3/envs/combmodel/lib/python3.10/doctest.py", line 1346, in __run
-        exec(compile(example.source, filename, "single",
-      File "<doctest default[0]>", line 1, in <module>
-        comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.99,tmax=10,eps=1,disable_tqdm=True)
-    NameError: name 'comb_model' is not defined
+Expected:
+    (array([ 0.        , -1.68859052, -1.77776905, -2.71815718, -2.35059768,
+        -2.35059768, -2.35059768, -2.35059768, -2.35059768, -2.35059768]),
+     array([ 0.        , -0.59174592, -0.69523766,  0.30401518,  1.20541352,
+             2.86754674,  3.40154263,  3.12629311,  2.44392253,  0.86665015]))
+Got:
+    (array([ 0.        , -0.18735114,  0.93376356,  0.93376356,  0.93376356,
+            0.93376356,  0.93376356,  0.93376356,  0.93376356,  0.93376356]), array([ 0.        ,  0.69238276,  1.76619877,  2.90515071,  4.12309106,
+            5.15350588,  6.2963343 ,  7.58805522,  8.86549329, 10.03142985]))
 **********************************************************************
 1 items had failures:
-   6 of   6 in default
-6 tests in 1 items.
-0 passed and 6 failed.
+   6 of   9 in default
+9 tests in 1 items.
+3 passed and 6 failed.
 ***Test Failed*** 6 failures.
 
 Doctest summary
 ===============
-    6 tests
+    9 tests
     6 failures in tests
     0 failures in setup code
     0 failures in cleanup code
