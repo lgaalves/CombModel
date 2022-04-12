@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en"
+ unique-identifier="unknown"
+ prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:language>en</dc:language>
+    <dc:title>comb-model</dc:title>
+    <dc:description>unknown</dc:description>
+    <dc:creator>Luiz G. A. Alves</dc:creator>
+    <dc:contributor>unknown</dc:contributor>
+    <dc:publisher>Luiz G. A. Alves</dc:publisher>
+    <dc:rights>2022, Luiz G. A. Alves</dc:rights>
+    <dc:identifier id="unknown">unknown</dc:identifier>
+    <dc:date>2022-04-12T10:44:48Z</dc:date>
+    <meta property="dcterms:modified">2022-04-12T10:44:48Z</meta>
+    <meta property="ibooks:version"></meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="ibooks:binding">true</meta>
+    <meta property="ibooks:scroll-axis">vertical</meta>
+  </metadata>
+  <manifest>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="epub-0" href="api.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-1" href="genindex.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-2" href="index.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-3" href="py-modindex.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-4" href="usage.xhtml" media-type="application/xhtml+xml" />
+    <item id="epub-5" href="_images/945b437ed7eecb4489ac896dd0fb3e5c302f601a.svg" media-type="image/svg+xml" />
+    <item id="epub-6" href="_images/comb-model.svg" media-type="image/svg+xml" />
+    <item id="epub-7" href="_images/comb-model1.svg" media-type="image/svg+xml" />
+    <item id="epub-8" href="_images/comb.png" media-type="image/png" />
+    <item id="epub-9" href="_images/combmodel.svg" media-type="image/svg+xml" />
+    <item id="epub-10" href="_images/fbm.png" media-type="image/png" />
+    <item id="epub-11" href="_images/featured.png" media-type="image/png" />
+    <item id="epub-12" href="_static/basic.css" media-type="text/css" />
+    <item id="epub-13" href="_static/epub.css" media-type="text/css" />
+    <item id="epub-14" href="_static/file.png" media-type="image/png" />
+    <item id="epub-15" href="_static/minus.png" media-type="image/png" />
+    <item id="epub-16" href="_static/plus.png" media-type="image/png" />
+    <item id="epub-17" href="_static/pygments.css" media-type="text/css" />
+    <item id="epub-18" href="generated/combmodel.xhtml" media-type="application/xhtml+xml" />
+  </manifest>
+  <spine toc="ncx" page-progression-direction="ltr">
+    <itemref idref="epub-2" />
+    <itemref idref="epub-4" />
+    <itemref idref="epub-3" />
+    <itemref idref="epub-1" />
+    <itemref idref="epub-0" linear="no" />
+    <itemref idref="epub-18" linear="no" />
+  </spine>
+  <guide>
+    <reference type="toc" title="Table of Contents" href="index.xhtml" />
+  </guide>
+</package>

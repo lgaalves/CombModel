@@ -14,13 +14,15 @@ Contents
    usage
    api
 
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
 
-Indices and tables
+.. automodule:: combmodel
+   :members:
+
+Indices
 ==================
 
 * :ref:`genindex`

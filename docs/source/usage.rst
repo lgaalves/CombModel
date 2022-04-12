@@ -13,7 +13,6 @@
    :scale: 100%
 
 
-
 |version| |license| |downloads| |docs| 
 
 
@@ -22,12 +21,22 @@ comb-model:  A package to simulate Fractional Brownian walks on a comb-like stru
 
 This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).
 
+If you have used ``comb-model`` in a scientific publication, we would appreciate citations to the following reference [#ribeiro2014]_:
+
+- Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). `Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure <http://dx.doi.org/10.1088/1367-2630/16/9/093050>`_.  New Journal of Physics 16, 093050
+
+
+
 
 .. figure:: https://raw.githubusercontent.com/lgaalves/combmodel/main/figures/featured.png
    :height: 489px
    :width: 633px
    :scale: 80 %
    :align: center
+
+
+For more detailed information about the functions implemented in ``comb-model``, please 
+consult its `documentation <https://comb-model.readthedocs.io/en/latest/index.html>`_.
 
 
 Installation
@@ -46,7 +55,7 @@ Dependencies
 * ``tdqm`` 
 
 Processes
--------------
+---------
 
 This package offers functions to simulate Fractional Brownian walks on a plane or Comb-like structures via via Langevin equations.
 
@@ -58,7 +67,7 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
     import matplotlib.pyplot as plt
     from combmodel import langevin_fbn
     
-    x,y=x,y=langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=1000,disable_tqdm=False)
+    x,y=langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=1000,disable_tqdm=True)
 
     
     f, ax = plt.subplots(nrows=1, ncols=1, figsize=(9.1,7))
@@ -80,7 +89,7 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
    import matplotlib.pyplot as plt
    from combmodel import comb_model
 
-   x, y = ccomb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=False)
+   x, y = comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.5,tmax=5000,eps=1,disable_tqdm=True)
 
    f, ax = plt.subplots(nrows=1, ncols=1, figsize=(9.1,7))
    ax.plot(x,y,color='#D62728',markersize=0,linewidth=2)
@@ -94,17 +103,17 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
    :align: center
 
 
-List of functions
--------------
 
+List of functions
+-------------------
 
 .. autofunction:: combmodel.generate_noise
 .. autofunction:: combmodel.langevin_fbn
 .. autofunction:: combmodel.comb_model
 
-
 References
 ==========
 
-.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. DOI: http://dx.doi.org/10.1088/1367-2630/16/9/093050
+.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). `Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure <http://dx.doi.org/10.1088/1367-2630/16/9/093050>`_. New Journal of Physics 16, 093050
+
 

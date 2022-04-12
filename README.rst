@@ -35,7 +35,7 @@ If you have used ``comb-model`` in a scientific publication, we would appreciate
    :align: center
 
 
-For more detailed information about the methods implemented in ``comb-model``, please 
+For more detailed information about the methods functions in ``comb-model``, please 
 consult its `documentation <https://comb-model.readthedocs.io/en/latest/index.html>`_.
 
 

@@ -14,8 +14,9 @@ import os
 import sys
 import inspect
 
-sys.path.insert(0, os.path.abspath('../combmodel/'))
-
+path = os.path.abspath('../../combmodel/')
+print(path)
+sys.path.insert(0,path )
 
 # -- Project information -----------------------------------------------------
 
@@ -24,7 +25,7 @@ copyright = '2022, Luiz G. A. Alves'
 author = 'Luiz G. A. Alves'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.6'
+release = '1.0.0'
 
 
 # -- General configuration ---------------------------------------------------

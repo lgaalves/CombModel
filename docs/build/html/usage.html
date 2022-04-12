@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>comb-model: A package to simulate Fractional Brownian walks on a comb-like structure. &mdash; comb-model 0.0.6 documentation</title>
+  <title>comb-model: A package to simulate Fractional Brownian walks on a comb-like structure. &mdash; comb-model 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -79,9 +79,15 @@
 <section id="comb-model-a-package-to-simulate-fractional-brownian-walks-on-a-comb-like-structure">
 <h1>comb-model:  A package to simulate Fractional Brownian walks on a comb-like structure.<a class="headerlink" href="#comb-model-a-package-to-simulate-fractional-brownian-walks-on-a-comb-like-structure" title="Permalink to this headline"></a></h1>
 <p>This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).</p>
+<p>If you have used <code class="docutils literal notranslate"><span class="pre">comb-model</span></code> in a scientific publication, we would appreciate citations to the following reference <a class="footnote-reference brackets" href="#ribeiro2014" id="id1">1</a>:</p>
+<ul class="simple">
+<li><p>Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). <a class="reference external" href="http://dx.doi.org/10.1088/1367-2630/16/9/093050">Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure</a>.  New Journal of Physics 16, 093050</p></li>
+</ul>
 <figure class="align-center">
 <a class="reference internal image-reference" href="https://raw.githubusercontent.com/lgaalves/combmodel/main/figures/featured.png"><img alt="https://raw.githubusercontent.com/lgaalves/combmodel/main/figures/featured.png" src="https://raw.githubusercontent.com/lgaalves/combmodel/main/figures/featured.png" style="width: 506.40000000000003px; height: 391.20000000000005px;" /></a>
 </figure>
+<p>For more detailed information about the functions implemented in <code class="docutils literal notranslate"><span class="pre">comb-model</span></code>, please
+consult its <a class="reference external" href="https://comb-model.readthedocs.io/en/latest/index.html">documentation</a>.</p>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">comb-model</span></code> package is available on pypi and can be installed using pip</p>
@@ -105,7 +111,7 @@
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">combmodel</span> <span class="kn">import</span> <span class="n">langevin_fbn</span>
 
-<span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">langevin_fbn</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">betax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">betay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">hurstx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">hursty</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">tmax</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">disable_tqdm</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="n">langevin_fbn</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">betax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">betay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">hurstx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">hursty</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">tmax</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span><span class="n">disable_tqdm</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 
 <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">9.1</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
@@ -122,7 +128,7 @@
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">combmodel</span> <span class="kn">import</span> <span class="n">comb_model</span>
 
-<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">ccomb_model</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">betax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">betay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">hurstx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">hursty</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">tmax</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span><span class="n">eps</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">disable_tqdm</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">comb_model</span><span class="p">(</span><span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">betax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">betay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">hurstx</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">hursty</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">tmax</span><span class="o">=</span><span class="mi">5000</span><span class="p">,</span><span class="n">eps</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">disable_tqdm</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">9.1</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#D62728&#39;</span><span class="p">,</span><span class="n">markersize</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
@@ -139,11 +145,11 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="combmodel.generate_noise">
 <span class="sig-prename descclassname"><span class="pre">combmodel.</span></span><span class="sig-name descname"><span class="pre">generate_noise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hurstx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hursty</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmax</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#combmodel.generate_noise" title="Permalink to this definition"></a></dt>
-<dd><p>Generate sequences of fractional Gaussian noise.</p>
+<dd><p>Generate sequences of fractional Gaussian noise. TEST</p>
 <dl class="simple">
-<dt>hurstx:</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
+<dt>hurstx: float</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
 </dd>
-<dt>hursty:</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
+<dt>hursty: float</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
 </dd>
 <dt>tmax: int</dt><dd><p>Maximum number of time-step simulated.</p>
 </dd>
@@ -179,9 +185,9 @@
 </dd>
 <dt>betay: float</dt><dd><p>Constant related to diffusion coefficient in the y-direction.</p>
 </dd>
-<dt>hurstx:</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
+<dt>hurstx: float</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
 </dd>
-<dt>hursty:</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
+<dt>hursty: float</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
 </dd>
 <dt>tmax: int</dt><dd><p>Maximum number of time-step simulated.</p>
 </dd>
@@ -224,9 +230,9 @@
 </dd>
 <dt>betay: float</dt><dd><p>Constant related to diffusion coefficient in the y-direction.</p>
 </dd>
-<dt>hurstx:</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
+<dt>hurstx: float</dt><dd><p>Hurst exponent in the x-direction. Vales must be in the range (0,1).</p>
 </dd>
-<dt>hursty:</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
+<dt>hursty: float</dt><dd><p>Hurst exponent in the y-direction. Vales must be in the range (0,1).</p>
 </dd>
 <dt>tmax: int</dt><dd><p>Maximum number of time-step simulated.</p>
 </dd>
@@ -263,8 +269,8 @@
 <section id="references">
 <h1>References<a class="headerlink" href="#references" title="Permalink to this headline"></a></h1>
 <dl class="footnote brackets">
-<dt class="label" id="ribeiro2014"><span class="brackets">1</span></dt>
-<dd><p>Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. DOI: <a class="reference external" href="http://dx.doi.org/10.1088/1367-2630/16/9/093050">http://dx.doi.org/10.1088/1367-2630/16/9/093050</a></p>
+<dt class="label" id="ribeiro2014"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). <a class="reference external" href="http://dx.doi.org/10.1088/1367-2630/16/9/093050">Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure</a>. New Journal of Physics 16, 093050</p>
 </dd>
 </dl>
 </section>
