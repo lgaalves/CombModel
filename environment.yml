@@ -3,4 +3,3 @@ dependencies:
         - python
         - tqdm
         - numpy
-        - stochastic
