@@ -13,7 +13,6 @@
    :scale: 100%
 
 
-
 |version| |license| |downloads| |docs| 
 
 
@@ -22,12 +21,22 @@ comb-model:  A package to simulate Fractional Brownian walks on a comb-like stru
 
 This package simulate trajectories of the comb model via Langevin equations driven by fractional Gaussian noises (long-range correlated).
 
+If you have used ``comb-model`` in a scientific publication, we would appreciate citations to the following reference [#ribeiro2014]_:
+
+- Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). `Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure <http://dx.doi.org/10.1088/1367-2630/16/9/093050>`_.  New Journal of Physics 16, 093050
+
+
+
 
 .. figure:: https://raw.githubusercontent.com/lgaalves/combmodel/main/figures/featured.png
    :height: 489px
    :width: 633px
    :scale: 80 %
    :align: center
+
+
+For more detailed information about the methods implemented in ``comb-model``, please 
+consult its `documentation <https://comb-model.readthedocs.io/en/latest/index.html>`_.
 
 
 Installation
@@ -97,4 +106,4 @@ This package offers functions to simulate Fractional Brownian walks on a plane o
 References
 ==========
 
-.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. DOI: http://dx.doi.org/10.1088/1367-2630/16/9/093050
+.. [#ribeiro2014] Haroldo V. Ribeiro, Angel A. Tateishi, Luiz G. A. Alves, Rafael S. Zola, Ervin K Lenzi (2014). `Investigating the interplay between mechanisms of anomalous diffusion via fractional Brownian walks on a comb-like structure. <http://dx.doi.org/10.1088/1367-2630/16/9/093050>`_. New Journal of Physics 16, 093050
