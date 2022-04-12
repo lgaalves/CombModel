@@ -31,7 +31,8 @@ def generate_noise(hurstx,hursty,tmax):
     >>> generate_noise(hurstx=0.5,hursty=0.5,tmax=5)
     (array([ 0.25768888,  0.26578568, -0.5264168 , -0.22897338,  1.5653223 ]),
      array([ 0.07702825, -0.76531544,  1.30514932, -1.88840645,  0.12964754]))
-
+    
+    >>> from combmodel import generate_noise
     >>> generate_noise(hurstx=0.05,hursty=0.99,tmax=5)
     (array([ 0.86985584, -0.06461844, -1.14352549, -0.58317815, -1.46406803]),
     array([-1.70277230e-01, -3.01093568e-01, -3.67460604e-01,  2.79234304e-04,-1.12502245e-01]))
@@ -82,6 +83,8 @@ def langevin_fbn(x0,y0,betax,betay,hurstx,hursty,tmax,disable_tqdm=False):
      array([ 0.        , -1.33455269, -0.76376196,  0.10190015,  0.54170037,
              1.03303179, -0.310934  ,  0.92504652,  1.77317527,  0.68204445]))
 
+
+    >>> from combmodel import langevin_fbn    
     >>> langevin_fbn(x0=0,y0=0,betax=1,betay=1,hurstx=0.05,hursty=0.95,tmax=10,disable_tqdm=True)
     (array([ 0.        , -1.06714954, -2.42275827, -2.15268094, -1.94348332,
         -2.83243755, -3.12425033, -3.72050659, -2.4537888 , -1.05256446]),
@@ -140,6 +143,7 @@ def comb_model(x0,y0,betax,betay,hurstx,hursty,tmax,eps,disable_tqdm=False):
      array([ 0.        , -0.07952973, -0.0537798 , -0.02380105,  0.0382455 ,
              0.10637735, -0.05516008,  0.02736965,  0.04563519,  0.16306934]))
 
+    >>> from combmodel import comb_model    
     >>> comb_model(x0=0,y0=0,betax=1,betay=1,hurstx=0.5,hursty=0.99,tmax=10,eps=1,disable_tqdm=True)
     (array([ 0.        , -1.68859052, -1.77776905, -2.71815718, -2.35059768,
         -2.35059768, -2.35059768, -2.35059768, -2.35059768, -2.35059768]),
