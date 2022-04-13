@@ -3,3 +3,12 @@ dependencies:
         - python
         - tqdm
         - numpy
+        - pip:
+          - recommonmark
+          - readthedocs-sphinx-ext
+          - stochastic
+          - nu
+        - mock
+        - pillow
+        - sphinx
+        - sphinx_rtd_theme
