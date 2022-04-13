@@ -1,6 +1,3 @@
-name: comb-model
-dependencies:
-        - tqdm
-        - numpy
-        - pip:
-          - stochastic
+tqdm
+numpy
+stochastic
