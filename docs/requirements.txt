@@ -1,6 +1,5 @@
 name: comb-model
 dependencies:
-        - python
         - tqdm
         - numpy
         - pip:
