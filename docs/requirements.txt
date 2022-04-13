@@ -1,3 +1,5 @@
 tqdm
 numpy
 stochastic
+sphinx_rtd_theme
+readthedocs-sphinx-search
