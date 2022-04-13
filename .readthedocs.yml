@@ -1,16 +1,2 @@
-
-build:
-    image: latest
-
-python:
-    version: 3.6
-    setup_py_install: true
-
-python:
-  # Install our python package before building the docs
-  install:
-    - method: pip
-      path: .
-
 conda:
     file: environment.yml
