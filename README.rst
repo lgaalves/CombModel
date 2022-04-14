@@ -2,7 +2,7 @@
    :target: https://pypi.org/project/comb-model/
    :scale: 100%
 .. |license| image:: https://img.shields.io/github/license/lgaalves/combmodel?style=plastic   :alt: GitHub 
-   :target:  https://github.com/lgaalves/CombMolde/blob/master/license.rst
+   :target:  https://github.com/lgaalves/CombModel/blob/main/license.rst
    :scale: 100%
 .. |downloads| image:: https://img.shields.io/pypi/dm/comb-model?style=plastic    :alt: PyPI - Downloads
    :target: https://pypi.org/project/comb-model/
